@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Segoe;
+	list-style: none;
+	text-decoration: none;
+	hyphens: auto;
+}
+
+:root {
+	--branco: #e7e7e7;
+	--preto: rgb(0, 0, 0);
+	--azul: #09f;
+	--dourado: #ffd700;
+	--corPrimaria: #212121;
+	--corBarra: #272727;
+}
+
+body {
+	background: var(--corPrimaria);
+	color: var(--branco);
+}
