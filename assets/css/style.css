@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Segoe;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	list-style: none;
 	text-decoration: none;
 	hyphens: auto;
@@ -20,4 +20,69 @@
 body {
 	background: var(--corPrimaria);
 	color: var(--branco);
+}
+
+header {
+	background-color: var(--corBarra);
+	box-shadow: 0 0 5px var(--preto);
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+}
+
+nav h1 {
+	font-size: 2rem;
+	text-shadow: 0 0 5px var(--dourado);
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: auto;
+}
+
+nav a { color: var(--branco); }
+
+.container {
+	display: grid;
+	place-items: center;
+	gap: 2rem;
+	margin-top: 1rem;
+}
+
+.container button {
+	width: 45px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	border: none;
+	font-size: 1.5rem;
+	background: transparent;
+	color: var(--branco);
+	cursor: pointer;
+	transition: background .3s ease-in-out;
+}
+
+.container button.ativo {
+	background: var(--azul);
+}
+
+.container button i { transition: rotate .3s ease-in-out; }
+
+.container button.ativo i {
+	rotate: .5turn;
+}
+
+#pessoa {
+	visibility: hidden;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+}
+
+#pessoa.visivel {
+	visibility: visible;
+	opacity: 1;
 }
