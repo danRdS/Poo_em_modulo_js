@@ -5,6 +5,6 @@ export class Pessoa {
     }
 
     apresentar() {
-        return `Meu nome é ${this.nome} e tenho ${this.idade} anos.`;
+        return `${this.nome} tem ${this.idade} anos.`;
     }
 }
